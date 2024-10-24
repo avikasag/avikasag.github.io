@@ -5,12 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ankit Vikas Agrawal</title>
     <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         .container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             text-align: left;
             width: 100%;
             padding: 0 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .image-section {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .image-section img {
+            max-width: 250px;
+            border-radius: 10px;
         }
         .column {
             flex: 1;
@@ -24,32 +41,61 @@
             list-style-type: disc;
             margin-left: 20px;
         }
+                .content-section {
+            flex: 2;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        h2 {
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .contact-info a {
+            display: block;
+            color: blue;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+      
     </style>
 </head>
-<body>
-
-  <header>
-    <h1>Ankit Vikas Agrawal</h1>
-    <p>Masters in Data Science at Stevens Institute of Technology</p>
-    <p>Ex. Senior Analyst at Capgemini</p>
-  </header>
-
-  <section>
-    <h2>Summery</h2>
-    <p>Detail-oriented analyst with a strong foundation in data analysis, statistical methods, and data visualization. <br> Experienced in Python, SQL, and Excel for data extraction, cleaning, and interpretation, with expertise in creating dashboards to enhance reporting capabilities. Led a team to improve project efficiency and developed Excel reports for KPI analysis.<br> Eager to leverage analytical expertise to drive meaningful insights in a data-related role.</p>
-  </section>
-
   
-  <section>
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:aagrawal1@stevens.edu">aagrawal1@stevens.edu</a></li>
-      <li>Email (Personal): <a href="mailto:aavikas01@gmail.com">aavikas01@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/ankit-vikas-agrawal/" target="_blank">Ankit Vikas Agrawal - LinkedIn</a></li>
-      <li><a href="https://github.com/avikasag" target="_blank">Ankit Vikas Agrawal - GitHub</a></li>
-    </ul>
-  </section>
+<body>
+   <div class="container">
+        <div class="image-section">
+            <img src="https://raw.githubusercontent.com/avikasag/avikasag.github.io/main/Ankit%20Agrawal%20photo.png" alt="Ankit Vikas Agrawal Picture">
+        </div>
+        <div class="content-section">
+            <h1>Ankit Vikas Agrawal</h1>
+            <h2>Masters in Data Science at Stevens Institute of Technology</h2>
+            <h2>Ex. Senior Analyst at Capgemini</h2>
 
+            <h3>Summary</h3>
+            <p>
+                Detail-oriented analyst with a strong foundation in data analysis, statistical methods, and data visualization.
+                Experienced in Python, SQL, and Excel for data extraction, cleaning, and interpretation, with expertise in creating
+                dashboards to enhance reporting capabilities. Led a team to improve project efficiency and developed Excel reports for KPI analysis.
+                Eager to leverage analytical expertise to drive meaningful insights in a data-related role.
+            </p>
+
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <a href="mailto:aagrawal1@stevens.edu">Email: aagrawal1@stevens.edu</a>
+                <a href="mailto:aavikas01@gmail.com">Email (Personal): aavikas01@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ankitvikasagrawal" target="_blank">Ankit Vikas Agrawal - LinkedIn</a>
+                <a href="https://github.com/ankitvikasagrawal" target="_blank">Ankit Vikas Agrawal - GitHub</a>
+            </div>
+        </div>
+    </div>
+  
   <section>
     <h2>Technical Skills</h2>
      <div class="container">
