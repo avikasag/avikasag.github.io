@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ankit Vikas Agrawal</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,35 +52,34 @@
 
   <section>
     <h2>Technical Skills</h2>
-     <div style="display: flex; justify-content: space-between;">
-      <div>
-        <h3>Programming Language</h3>
-          <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>ABAP</li>
-            <li>C</li>
-            <li>HTML</li>
-            <li>Fiori</li>
-          </ul>
-      </div>
-
-      <div>
-        <h3>Database Management</h3>
-          <ul>
-            <li>HANA</li>
-            <li>Databricks</li>
-          </ul>
-      </div>
-
-      <div>
-        <h3>Visualization</h3>
-          <ul>
-            <li>Microsoft Power Bi</li>
-            <li>Tableau</li>
-          </ul>
-      </div>
+     <div class="container">
+        <div class="column">
+            <h3>Programming Language</h3>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>ABAP</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>Fiori</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Database Management</h3>
+            <ul>
+                <li>HANA</li>
+                <li>Databricks</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Visualization</h3>
+            <ul>
+                <li>Microsoft Power BI</li>
+                <li>Tableau</li>
+            </ul>
+        </div>
     </div>
+    
     <h3>Microsoft Tools</h3>
     <ul>
       <li>Outlook</li>
