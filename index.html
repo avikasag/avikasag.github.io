@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Vikas Agrawal</title>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #0d1117;
+            background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+            background-size: cover;
+            color: #ffffff;
         }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-            width: 100%;
-            padding: 0 20px;
-            max-width: 1200px;
-            margin: auto;
+        a {
+            color: #58a6ff;
+            text-decoration: none;
         }
-        .image-section {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
+        a:hover {
+            text-decoration: underline;
         }
-        .image-section img {
-            max-width: 250px;
-            border-radius: 10px;
+        a:focus {
+            outline: 2px dashed #58a6ff;
+            outline-offset: 2px;
         }
-        .content-section {
-            flex: 2;
-            padding: 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        h2 {
-            margin: 5px 0;
-            font-size: 20px;
+        h1, h2, h3 {
+            color: #58a6ff;
         }
         p {
             line-height: 1.5;
         }
-        .contact-info a {
-            display: block;
-            color: blue;
-            text-decoration: none;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #1f6feb;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
+        /* Layout Styles */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        /* Technical Skills section */
+        .image-section, .content-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .image-section {
+            text-align: center;
+        }
+        /* Skills Section */
         .skills-section {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -60,144 +65,82 @@
             padding: 20px;
         }
         .skills-column {
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             padding: 15px;
+            border-left: 5px solid #1f6feb;
         }
         .skills-column h3 {
             font-size: 18px;
             margin-bottom: 10px;
         }
         .skills-column ul {
-            list-style-type: disc;
-            margin-left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-column li {
+            padding: 5px 0;
+            color: #c9d1d9;
+        }
+        /* Print Styles */
+        @media print {
+            body {
+                background: none;
+                color: #000;
+            }
+            .skills-column {
+                background-color: #fff;
+                color: #000;
+                border-left: none;
+            }
+            a {
+                color: #000;
+            }
         }
     </style>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #0d1117;
-        background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png'); /* Circuit Board Pattern */
-        background-size: cover;
-        color: #ffffff; /* White text for contrast */
-    }
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        width: 100%;
-        padding: 0 20px;
-        max-width: 1200px;
-        margin: auto;
-    }
-    .image-section {
-        flex: 1;
-        text-align: center;
-        padding: 20px;
-    }
-    .image-section img {
-        max-width: 250px;
-        border-radius: 10px;
-        border: 3px solid #1f6feb; /* Blue neon border */
-    }
-    .content-section {
-        flex: 2;
-        padding: 20px;
-    }
-    h1 {
-        margin: 0;
-        font-size: 36px;
-        color: #58a6ff; /* Bright blue for tech feel */
-    }
-    h2, h3 {
-        color: #8b949e;
-    }
-    p {
-        line-height: 1.5;
-    }
-    .contact-info a {
-        display: block;
-        color: #58a6ff;
-        text-decoration: none;
-    }
-    .contact-info a:hover {
-        text-decoration: underline;
-    }
-    /* Technical Skills section */
-    .skills-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-    .skills-column {
-        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for a modern feel */
-        border-radius: 10px;
-        padding: 15px;
-        border-left: 5px solid #1f6feb; /* Neon effect */
-    }
-    .skills-column h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: #58a6ff;
-    }
-    .skills-column ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    .skills-column li {
-        padding: 5px 0;
-        color: #c9d1d9;
-    }
-</style>
-  
 </head>
-
 <body>
-    <div class="container">
+    <header class="container">
         <div class="image-section">
-            <img src="https://raw.githubusercontent.com/avikasag/avikasag.github.io/main/Ankit%20Agrawal%20photo.png" alt="Ankit Vikas Agrawal Picture">
+            <img src="https://raw.githubusercontent.com/avikasag/avikasag.github.io/main/Ankit%20Agrawal%20photo.png" alt="Ankit Vikas Agrawal">
         </div>
         <div class="content-section">
             <h1>Ankit Vikas Agrawal</h1>
             <h2>Masters in Data Science at Stevens Institute of Technology</h2>
             <h2>Ex. Senior Analyst at Capgemini</h2>
-
-            <h3>Summary</h3>
-            <p>
-                Detail-oriented analyst with a strong foundation in data analysis, statistical methods, and data visualization.
-                Experienced in Python, SQL, and Excel for data extraction, cleaning, and interpretation, with expertise in creating
-                dashboards to enhance reporting capabilities. Led a team to improve project efficiency and developed Excel reports for KPI analysis.
-                Eager to leverage analytical expertise to drive meaningful insights in a data-related role.
-            </p>
-
-            <h3>Contact</h3>
-            <div class="contact-info">
-                <a href="mailto:aagrawal1@stevens.edu">Email: aagrawal1@stevens.edu</a>
-                <a href="mailto:aavikas01@gmail.com">Email (Personal): aavikas01@gmail.com</a>
-                <a href="https://www.linkedin.com/in/ankit-vikas-agrawal/" target="_blank">Ankit Vikas Agrawal - LinkedIn</a>
-                <a href="https://github.com/avikasag" target="_blank">Ankit Vikas Agrawal - GitHub</a>
-            </div>
+            <section>
+                <h3>Summary</h3>
+                <p>
+                    Detail-oriented analyst with a strong foundation in data analysis, statistical methods, and data visualization.
+                    Experienced in Python, SQL, and Excel for data extraction, cleaning, and interpretation, with expertise in creating
+                    dashboards to enhance reporting capabilities. Led a team to improve project efficiency and developed Excel reports for KPI analysis.
+                    Eager to leverage analytical expertise to drive meaningful insights in a data-related role.
+                </p>
+            </section>
+            <section>
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:aagrawal1@stevens.edu">aagrawal1@stevens.edu</a></p>
+                <p>Email (Personal): <a href="mailto:aavikas01@gmail.com">aavikas01@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ankit-vikas-agrawal/" target="_blank">Ankit Vikas Agrawal</a></p>
+                <p>GitHub: <a href="https://github.com/avikasag" target="_blank">Ankit Vikas Agrawal</a></p>
+            </section>
         </div>
-    </div>
-
-    <section>
-        <h2 style="text-align: center;">Technical Skills</h2>
-        <div class="skills-section">
-            <div class="skills-column">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>ABAP</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>Fiori</li>
-                </ul>
-            </div>
+    </header>
+    <main>
+        <section>
+            <h2 style="text-align: center;">Technical Skills</h2>
+            <div class="skills-section">
+                <div class="skills-column">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>ABAP</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>Fiori</li>
+                    </ul>
+                </div>
             <div class="skills-column">
                 <h3>Database Management</h3>
                 <ul>
